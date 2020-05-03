@@ -2,10 +2,6 @@ import React from 'react'
 import Square from './Square'
 
 export default class Board extends React.Component {
-    constructor(props) {
-        super(props)
-    } 
-
     renderSquare = (index) => {
         return(
             <Square value = {this.props.squares[index]} handleClick = {() => this.props.clickAction(index)}/>
